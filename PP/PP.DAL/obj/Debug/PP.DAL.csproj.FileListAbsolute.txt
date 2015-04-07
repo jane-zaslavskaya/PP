@@ -5,3 +5,14 @@ C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.DAL\bin\Debug\PP.Core.Data.d
 C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.DAL\bin\Debug\PP.Core.Data.pdb
 C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.DAL\obj\Debug\PP.DAL.dll
 C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.DAL\obj\Debug\PP.DAL.pdb
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.DAL\bin\Debug\PP.DAL.dll.config
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.DAL\bin\Debug\EntityFramework.dll
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.DAL\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.DAL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.DAL\bin\Debug\PP.EF.dll
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.DAL\bin\Debug\PP.EF.pdb
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.DAL\bin\Debug\EntityFramework.xml
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.DAL\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.DAL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml

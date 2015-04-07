@@ -1,0 +1,5 @@
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.Resources\bin\Debug\PP.Resources.dll
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.Resources\bin\Debug\PP.Resources.pdb
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.Resources\obj\Debug\PP.Resources.csprojResolveAssemblyReference.cache
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.Resources\obj\Debug\PP.Resources.dll
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.Resources\obj\Debug\PP.Resources.pdb

@@ -128,7 +128,6 @@ namespace PP.DAL.Repositories
         /// </summary>
         public void SaveChanges()
         {
-
             this.dataContext.SaveChanges();
         }
 
@@ -139,7 +138,6 @@ namespace PP.DAL.Repositories
                 dataContext.Dispose();
             }
         }
-
 
         #endregion
     }

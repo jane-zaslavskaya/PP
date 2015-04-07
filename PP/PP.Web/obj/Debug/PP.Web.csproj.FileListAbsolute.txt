@@ -1,0 +1,6 @@
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.Web\bin\PP.Web.dll.config
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.Web\bin\PP.Web.dll
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.Web\bin\PP.Web.pdb
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.Web\obj\Debug\PP.Web.csprojResolveAssemblyReference.cache
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.Web\obj\Debug\PP.Web.dll
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.Web\obj\Debug\PP.Web.pdb

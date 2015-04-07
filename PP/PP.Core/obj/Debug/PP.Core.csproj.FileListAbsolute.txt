@@ -1,0 +1,5 @@
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.Core\bin\Debug\PP.Core.dll
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.Core\bin\Debug\PP.Core.pdb
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.Core\obj\Debug\PP.Core.csprojResolveAssemblyReference.cache
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.Core\obj\Debug\PP.Core.dll
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.Core\obj\Debug\PP.Core.pdb

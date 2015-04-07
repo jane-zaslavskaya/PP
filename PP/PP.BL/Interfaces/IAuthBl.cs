@@ -6,8 +6,8 @@ namespace PP.BL.Interfaces
 {
     public interface IAuthBl
     {
-        Task<IdentityResult> RegisterUser(IdentityUser userModel);
+        Task<IdentityResult> RegisterUser(IdentityUser userModel, string password);
 
-
+        Task<IdentityUser> FindUser(string userName, string password);
     }
 }

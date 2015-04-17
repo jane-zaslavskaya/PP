@@ -55,3 +55,11 @@ C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.API\bin\Microsoft.Owin.Secur
 C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.API\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.API\bin\System.Web.Http.Owin.xml
 C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.API\bin\PP.EF.pdb
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.API\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.API\bin\Microsoft.Practices.Unity.dll
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.API\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.API\bin\PP.ServiceLocation.dll
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.API\bin\PP.ServiceLocation.pdb
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.API\bin\Microsoft.Practices.Unity.xml
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.API\bin\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.API\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml

@@ -13,6 +13,11 @@ namespace PP.API.Controllers
     {
         private readonly IAuthBl _authBl;
 
+        public AccountController()
+        {
+            
+        }
+
         public AccountController(IAuthBl authBl)
         {
             _authBl = authBl;

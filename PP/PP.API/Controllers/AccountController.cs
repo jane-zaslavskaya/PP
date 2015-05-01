@@ -1,9 +1,9 @@
 ﻿using System.Threading.Tasks;
 using System.Web.Http;
 using AutoMapper;
-using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using PP.API.Core.Models;
+using Microsoft.AspNet.Identity;
 using PP.BL.Interfaces;
 
 namespace PP.API.Controllers
@@ -11,7 +11,10 @@ namespace PP.API.Controllers
     [RoutePrefix("api/Account")]
     public class AccountController : ApiController
     {
-        private readonly IAuthBl _authBl;
+         private readonly IAuthBl _authBl;
+
+        public AccountController()
+        { }
 
         public AccountController(IAuthBl authBl)
         {
@@ -20,6 +23,7 @@ namespace PP.API.Controllers
 
         [AllowAnonymous]
         [Route("Register")]
+        [HttpPost]
         public async Task<IHttpActionResult> Register(AuthUserModel userModel)
         {
             if (!ModelState.IsValid)
@@ -27,8 +31,8 @@ namespace PP.API.Controllers
                 return BadRequest(ModelState);
             }
 
-            IdentityResult result = await _authBl.RegisterUser(Mapper.Map<IdentityUser>(userModel), userModel.Password);
-            IHttpActionResult errorResult = GetErrorResult(result);
+            var result = await _authBl.RegisterUser(Mapper.Map<IdentityUser>(userModel), userModel.Password);
+            var errorResult = GetErrorResult(result);
 
             if (errorResult != null)
             {

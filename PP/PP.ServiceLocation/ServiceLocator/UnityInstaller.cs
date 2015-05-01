@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Practices.Unity;
+﻿using Microsoft.Practices.Unity;
 using PP.BL.Implementation;
 using PP.BL.Interfaces;
 
 namespace PP.ServiceLocation.ServiceLocator
 {
-    public class UnityInstaller
+    public static class UnityInstaller
     {
         public static void Install(UnityContainer container)
         {

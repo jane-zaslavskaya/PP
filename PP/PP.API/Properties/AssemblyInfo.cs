@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("PP.API")]
+[assembly: AssemblyTitle("AngularJSAuthentication.API")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("PP.API")]
+[assembly: AssemblyProduct("AngularJSAuthentication.API")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("c901e7c8-e2ea-42aa-b1c9-fb54ff3ca40e")]
+[assembly: Guid("fd83335f-ecfd-4c93-9cdc-b6395fffcc58")]
 
 // Version information for an assembly consists of the following four values:
 //

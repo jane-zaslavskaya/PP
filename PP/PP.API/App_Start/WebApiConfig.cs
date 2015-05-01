@@ -4,11 +4,8 @@ using System.Linq;
 using System.Net.Http.Formatting;
 using System.Web.Http;
 using System.Web.Mvc;
-using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Practices.Unity;
 using Newtonsoft.Json.Serialization;
-using PP.API.Controllers;
 using PP.ServiceLocation;
 using PP.ServiceLocation.ServiceLocator;
 
@@ -33,7 +30,27 @@ namespace PP.API
             jsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
 
             InstallUnity(config);
+            App_Start.AutoMapper.Map();
         }
+
+        //public static void Register(HttpConfiguration config)
+        //{
+        //    // Web API configuration and services
+
+        //    // Web API routes
+        //    config.MapHttpAttributeRoutes();
+
+        //    config.Routes.MapHttpRoute(
+        //        name: "DefaultApi",
+        //        routeTemplate: "api/{controller}/{id}",
+        //        defaults: new { id = RouteParameter.Optional }
+        //    );
+
+        //    var jsonFormatter = config.Formatters.OfType<JsonMediaTypeFormatter>().First();
+        //    jsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+
+        ////    InstallUnity(config);
+        //}
 
         private static void InstallUnity(HttpConfiguration config)
         {

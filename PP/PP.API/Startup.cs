@@ -1,9 +1,12 @@
-﻿using Microsoft.Owin;
+﻿using PP.API.Providers;
+using Microsoft.Owin;
 using Microsoft.Owin.Security.OAuth;
 using Owin;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
 using System.Web.Http;
-using PP.API.Providers;
 
 [assembly: OwinStartup(typeof(PP.API.Startup))]
 
@@ -20,14 +23,12 @@ namespace PP.API
             WebApiConfig.Register(config);
             app.UseCors(Microsoft.Owin.Cors.CorsOptions.AllowAll);
             app.UseWebApi(config);
-
-            App_Start.AutoMapper.Map();
         }
 
         private void ConfigureOpenAuth(IAppBuilder app)
         {
-            var oAuthAuthorixationServer =
-                new OAuthAuthorizationServerOptions
+            var oAuthAuthorizationServer
+                = new OAuthAuthorizationServerOptions()
                 {
                     AllowInsecureHttp = true,
                     TokenEndpointPath = new PathString("/token"),
@@ -35,8 +36,8 @@ namespace PP.API
                     Provider = new SimpleAuthorizationServerProvider()
                 };
 
-            // Token generation
-            app.UseOAuthAuthorizationServer(oAuthAuthorixationServer);
+            // Token Generation
+            app.UseOAuthAuthorizationServer(oAuthAuthorizationServer);
             app.UseOAuthBearerAuthentication(new OAuthBearerAuthenticationOptions());
         }
     }

@@ -7,6 +7,7 @@ using System.Web;
 using PP.API.Models;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin.Security.OAuth;
+using PP.BL.Interfaces;
 
 namespace PP.API.Providers
 {
@@ -20,17 +21,14 @@ namespace PP.API.Providers
 
         public override async Task GrantResourceOwnerCredentials(OAuthGrantResourceOwnerCredentialsContext context)
         {
-            context.OwinContext.Response.Headers.Add("Access-Control-Allow-Origin", new[] {"*"});
+            context.OwinContext.Response.Headers.Add("Access-Control-All-Origin", new[] { "*" });
 
-            using (AuthRepository _repo = new AuthRepository())
+            var authService = (IAuthBl)System.Web.Mvc.DependencyResolver.Current.GetService(typeof(IAuthBl));
+            var user = await authService.FindUser(context.UserName, context.Password);
+            if (user == null)
             {
-                IdentityUser user = await _repo.FindUser(context.UserName, context.Password);
-
-                if (user == null)
-                {
-                    context.SetError("invalid_grant", "The user name or password is incorrect");
-                    return;
-                }
+                context.SetError("invalid_grant", "The user name or password is incorrect");
+                return;
             }
 
             var identity = new ClaimsIdentity(context.Options.AuthenticationType);

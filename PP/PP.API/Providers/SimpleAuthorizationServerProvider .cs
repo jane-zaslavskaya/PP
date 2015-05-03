@@ -14,6 +14,12 @@ namespace PP.API.Providers
     public class SimpleAuthorizationServerProvider
         : OAuthAuthorizationServerProvider
     {
+
+        //public SimpleAuthorizationServerProvider(IAuthBl bl)
+        //{
+            
+        //}
+
         public override async Task ValidateClientAuthentication(OAuthValidateClientAuthenticationContext context)
         {
             context.Validated();
@@ -29,7 +35,7 @@ namespace PP.API.Providers
             {
                 context.SetError("invalid_grant", "The user name or password is incorrect");
                 return;
-            }
+            } 
 
             var identity = new ClaimsIdentity(context.Options.AuthenticationType);
             identity.AddClaim(new Claim("sub", context.UserName));

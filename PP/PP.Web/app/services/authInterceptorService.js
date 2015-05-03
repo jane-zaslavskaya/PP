@@ -1,30 +1,29 @@
 ﻿'use strict';
-app.factory('authInterceptorService', [
-    '$q', '$location', 'localStorageService', function($q, $location, localStorageService) {
+app.factory('authInterceptorService', ['$q', '$location', 'localStorageService', function ($q, $location, localStorageService) {
 
-        var authInterceptorServiceFactory = {};
+    var authInterceptorServiceFactory = {};
 
-        var _reguest = function(config) {
-            config.headers = config.headers || {};
+    var _request = function (config) {
 
-            var authData = localStorageService.get('authorizationData');
-            if (authData) {
-                config.headers.Authorization = 'Bearer ' + authData.token;
-            }
+        config.headers = config.headers || {};
 
-            return config;
+        var authData = localStorageService.get('authorizationData');
+        if (authData) {
+            config.headers.Authorization = 'Bearer ' + authData.token;
         }
 
-        var _responseError = function(rejection) {
-            if (rejection.status === 401) {
-                $location.path('/login');
-            }
-            return $q.reject(rejection);
-        }
-
-        authInterceptorServiceFactory.reguest = _reguest;
-        authInterceptorServiceFactory.responseError = _responseError;
-
-        return authInterceptorServiceFactory;
+        return config;
     }
-]);
+
+    var _responseError = function (rejection) {
+        if (rejection.status === 401) {
+            $location.path('/login');
+        }
+        return $q.reject(rejection);
+    }
+
+    authInterceptorServiceFactory.request = _request;
+    authInterceptorServiceFactory.responseError = _responseError;
+
+    return authInterceptorServiceFactory;
+}]);

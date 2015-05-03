@@ -16,6 +16,7 @@ namespace PP.API
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
+            config.EnableCors();
 
             // Web API routes
             config.MapHttpAttributeRoutes();
@@ -29,7 +30,6 @@ namespace PP.API
             var jsonFormatter = config.Formatters.OfType<JsonMediaTypeFormatter>().First();
             jsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
 
-            InstallUnity(config);
             App_Start.AutoMapper.Map();
         }
 
@@ -52,16 +52,16 @@ namespace PP.API
         ////    InstallUnity(config);
         //}
 
-        private static void InstallUnity(HttpConfiguration config)
-        {
-            var container = new UnityContainer();
-            UnityInstaller.Install(container);
-            IControllerFactory factory = new UnityControllerFactory(container);
-            ControllerBuilder.Current.SetControllerFactory(factory);
-            //container.RegisterType<UserManager<ApplicationUser>>(new HierarchicalLifetimeManager());
-            //container.RegisterType<IUserStore<ApplicationUser>, UserStore<ApplicationUser>>(new HierarchicalLifetimeManager());
-            //container.RegisterType<AccountController>(new InjectionConstructor());
-            config.DependencyResolver = new UnityResolver(container);
-        }
+        //private static void InstallUnity(HttpConfiguration config)
+        //{
+        //    var container = new UnityContainer();
+        //    UnityInstaller.Install(container);
+        //    IControllerFactory factory = new UnityControllerFactory(container);
+        //    ControllerBuilder.Current.SetControllerFactory(factory);
+        //    //container.RegisterType<UserManager<ApplicationUser>>(new HierarchicalLifetimeManager());
+        //    //container.RegisterType<IUserStore<ApplicationUser>, UserStore<ApplicationUser>>(new HierarchicalLifetimeManager());
+        //    //container.RegisterType<AccountController>(new InjectionConstructor());
+        //    config.DependencyResolver = new UnityResolver(container);
+        //}
     }
 }

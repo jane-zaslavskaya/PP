@@ -1,5 +1,6 @@
 ﻿using System.Threading.Tasks;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using AutoMapper;
 using Microsoft.AspNet.Identity.EntityFramework;
 using PP.API.Core.Models;
@@ -9,16 +10,19 @@ using PP.BL.Interfaces;
 namespace PP.API.Controllers
 {
     [RoutePrefix("api/Account")]
+    [EnableCors(origins: "http://192.168.0.103:3454", headers: "*", methods: "*")]
     public class AccountController : ApiController
     {
          private readonly IAuthBl _authBl;
 
-        public AccountController()
-        { }
-
         public AccountController(IAuthBl authBl)
         {
             _authBl = authBl;
+        }
+
+        public AccountController()
+        {
+            _authBl = (IAuthBl)System.Web.Mvc.DependencyResolver.Current.GetService(typeof(IAuthBl));
         }
 
         [AllowAnonymous]
@@ -31,6 +35,7 @@ namespace PP.API.Controllers
                 return BadRequest(ModelState);
             }
 
+            var a = Mapper.Map<IdentityUser>(userModel);
             var result = await _authBl.RegisterUser(Mapper.Map<IdentityUser>(userModel), userModel.Password);
             var errorResult = GetErrorResult(result);
 

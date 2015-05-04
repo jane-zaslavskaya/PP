@@ -4,15 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C02F2E3C-9AD6-4AD5-B55F-FFF22BA10DBB}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{980431D4-9B75-4BEB-BC70-8B28B379362D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PP.Core</RootNamespace>
-    <AssemblyName>PP.Core</AssemblyName>
+    <RootNamespace>Tests</RootNamespace>
+    <AssemblyName>Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +23,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -39,19 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DomainModel\UniversityStructure\Direction.cs" />
-    <Compile Include="DomainModel\UniversityStructure\Faculty.cs" />
-    <Compile Include="DomainModel\UniversityStructure\Group.cs" />
-    <Compile Include="DomainModel\UniversityStructure\Spetiality.cs" />
-    <Compile Include="DomainModel\UniversityStructure\Teacher.cs" />
-    <Compile Include="DomainModel\UniversityStructure\University.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\PP.Core.Data\PP.Core.Data.csproj">
-      <Project>{603d9c1b-f348-4ba2-8f55-4532cb7ab2da}</Project>
-      <Name>PP.Core.Data</Name>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PP.BL\PP.BL.csproj">
+      <Project>{1c7f783b-74e0-48fc-8ea9-91335e2f877d}</Project>
+      <Name>PP.BL</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

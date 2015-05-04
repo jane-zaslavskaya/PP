@@ -26,6 +26,11 @@ namespace PP.BL.Implementation
             return await this.userManager.FindAsync(userName, password);
         }
 
+        public IdentityUser GetById(long id)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Dispose()
         {
             this.userManager.Dispose();

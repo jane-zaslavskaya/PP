@@ -10,8 +10,6 @@ namespace PP.Core.Data.Base
 {
     public class BaseEntity
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long Id { get; set; }
     }
 }

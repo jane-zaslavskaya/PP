@@ -74,7 +74,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Implementation\AuthBl.cs" />
+    <Compile Include="Implementation\CistBl.cs" />
     <Compile Include="Interfaces\IAuthBl.cs" />
+    <Compile Include="Interfaces\ICistBl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -57,9 +57,7 @@ namespace PP.API
             //container.RegisterType<AccountController>(new InjectionConstructor());
 
             IDependencyResolver resolver = DependencyResolver.Current;
-
             IDependencyResolver newResolver = new UnityDependencyResolver(container, resolver);
-
             DependencyResolver.SetResolver(newResolver);
 
          //   config.DependencyResolver = new UnityResolver(container);

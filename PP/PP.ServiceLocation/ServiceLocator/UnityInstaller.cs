@@ -10,6 +10,7 @@ namespace PP.ServiceLocation.ServiceLocator
         {
             //container.RegisterType<DbContext, SpaContext>(new HierarchicalLifetimeManager());
             container.RegisterType(typeof(IAuthBl), typeof(AuthBl));
+
             //container.RegisterType(typeof(IBaseService<>), typeof(BaseService<>));
             //container.RegisterType(typeof(IAccountRepository), typeof(AccountRepository));
             //container.RegisterType(typeof(IAccountService), typeof(AccountService));

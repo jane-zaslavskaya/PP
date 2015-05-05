@@ -9,5 +9,7 @@ namespace PP.BL.Interfaces
         Task<IdentityResult> RegisterUser(IdentityUser userModel, string password);
 
         Task<IdentityUser> FindUser(string userName, string password);
+
+        IdentityUser GetById(long id);
     }
 }

@@ -12,7 +12,7 @@ app.controller('loginController', ['$scope', '$location', 'authService', functio
 
         authService.login($scope.loginData).then(function (response) {
 
-            $location.path('/dashboard');
+            $location.path('/fsgfd');
 
         },
          function (err) {

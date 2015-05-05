@@ -1,10 +1,12 @@
 ﻿using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Cors;
+using System.Web.Mvc;
 using AutoMapper;
 using Microsoft.AspNet.Identity.EntityFramework;
 using PP.API.Core.Models;
 using Microsoft.AspNet.Identity;
+using PP.BL.Implementation;
 using PP.BL.Interfaces;
 
 namespace PP.API.Controllers
@@ -25,9 +27,9 @@ namespace PP.API.Controllers
             _authBl = (IAuthBl)System.Web.Mvc.DependencyResolver.Current.GetService(typeof(IAuthBl));
         }
 
-        [AllowAnonymous]
+        [System.Web.Http.AllowAnonymous]
         [Route("Register")]
-        [HttpPost]
+        [System.Web.Http.HttpPost]
         public async Task<IHttpActionResult> Register(AuthUserModel userModel)
         {
             if (!ModelState.IsValid)

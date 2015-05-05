@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNet.Identity.EntityFramework;
+﻿using System.Data.Entity;
+using System.Threading.Tasks;
+using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace PP.EF
 {
@@ -8,5 +10,6 @@ namespace PP.EF
             : base("PPContext")
         {
         }
+
     }
 }

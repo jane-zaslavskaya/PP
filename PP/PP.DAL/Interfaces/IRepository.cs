@@ -5,7 +5,7 @@ using PP.Core.Data.Base;
 
 namespace PP.DAL.Interfaces
 {
-    public interface IRepository<T> where T : BaseEntity
+    public interface IRepository<T> where T : BaseModel
     {
         void Dispose();
 

@@ -16,7 +16,7 @@ namespace PP.DAL.Repositories
     /// </summary>
     /// <typeparam name="T">
     /// </typeparam>
-    public class Repository<T> : IRepository<T> where T : BaseEntity
+    public class Repository<T> : IRepository<T> where T : BaseModel
     {
         /// <summary>
         /// The data context.

@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -39,6 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DomainModel\Timetable\Event.cs" />
+    <Compile Include="DomainModel\Timetable\Hour.cs" />
+    <Compile Include="DomainModel\Timetable\Subject.cs" />
+    <Compile Include="DomainModel\Timetable\Timetable.cs" />
+    <Compile Include="DomainModel\Timetable\Type.cs" />
+    <Compile Include="DomainModel\UniversityStructure\CistUniversity.cs" />
     <Compile Include="DomainModel\UniversityStructure\Direction.cs" />
     <Compile Include="DomainModel\UniversityStructure\Faculty.cs" />
     <Compile Include="DomainModel\UniversityStructure\Group.cs" />
@@ -47,7 +57,9 @@
     <Compile Include="DomainModel\UniversityStructure\University.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PP.Core.Data\PP.Core.Data.csproj">
       <Project>{603d9c1b-f348-4ba2-8f55-4532cb7ab2da}</Project>

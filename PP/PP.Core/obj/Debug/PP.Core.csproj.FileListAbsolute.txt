@@ -5,3 +5,5 @@ C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.Core\obj\Debug\PP.Core.dll
 C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.Core\obj\Debug\PP.Core.pdb
 C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.Core\bin\Debug\PP.Core.Data.dll
 C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.Core\bin\Debug\PP.Core.Data.pdb
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.Core\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.Core\bin\Debug\Newtonsoft.Json.xml

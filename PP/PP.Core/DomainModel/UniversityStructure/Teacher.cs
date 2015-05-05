@@ -1,11 +1,9 @@
-﻿using PP.Core.Data.Base;
+﻿using Newtonsoft.Json;
+using PP.Core.Data.Base;
 
 namespace PP.Core.DomainModel.UniversityStructure
 {
-    public class Teacher : BaseEntity
+    public class Teacher : BaseFullShortNameModel
     {
-        public string FullName { get; set; }
-
-        public string ShortName { get; set; }
     }
 }

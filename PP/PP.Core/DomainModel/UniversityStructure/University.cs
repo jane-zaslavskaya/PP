@@ -1,13 +1,12 @@
 ﻿using System.Collections.Generic;
+using Newtonsoft.Json;
+using PP.Core.Data.Base;
 
 namespace PP.Core.DomainModel.UniversityStructure
 {
-    public class University
+    public class University : BaseFullShortNameModel
     {
-        public string FullName { get; set; }
-
-        public string ShortName { get; set; }
-
-        public List<Faculty> Faculties { get; set; }    
+        [JsonProperty("faculties")]
+        public List<Faculty> Faculties { get; set; }
     }
 }

@@ -12,7 +12,7 @@ namespace Tests
         static void Main(string[] args)
         {
             var cist = new CistBl();
-            var json = cist.GetAllGroups();
+            var json = cist.GetTimetableForGroup("4307140");
 
             Console.WriteLine(json);
         }

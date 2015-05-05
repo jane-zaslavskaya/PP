@@ -57,8 +57,9 @@
     <Reference Include="Microsoft.Owin.Security.OAuth">
       <HintPath>..\packages\Microsoft.Owin.Security.OAuth.2.1.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Owin">
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
@@ -84,6 +85,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PP.Core.Data\PP.Core.Data.csproj">
+      <Project>{603d9c1b-f348-4ba2-8f55-4532cb7ab2da}</Project>
+      <Name>PP.Core.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PP.Core\PP.Core.csproj">
+      <Project>{c02f2e3c-9ad6-4ad5-b55f-fff22ba10dbb}</Project>
+      <Name>PP.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PP.EF\PP.EF.csproj">
       <Project>{db468b92-a389-442f-83fd-b0fd75647d81}</Project>
       <Name>PP.EF</Name>

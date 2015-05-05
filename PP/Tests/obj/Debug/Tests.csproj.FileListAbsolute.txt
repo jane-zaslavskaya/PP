@@ -14,3 +14,9 @@ C:\Users\Вячеслав\Documents\GitHub\PP\PP\Tests\bin\Debug\EntityFramework
 C:\Users\Вячеслав\Documents\GitHub\PP\PP\Tests\obj\Debug\Tests.csprojResolveAssemblyReference.cache
 C:\Users\Вячеслав\Documents\GitHub\PP\PP\Tests\obj\Debug\Tests.exe
 C:\Users\Вячеслав\Documents\GitHub\PP\PP\Tests\obj\Debug\Tests.pdb
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\Tests\bin\Debug\PP.Core.dll
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\Tests\bin\Debug\PP.Core.Data.dll
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\Tests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\Tests\bin\Debug\PP.Core.pdb
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\Tests\bin\Debug\PP.Core.Data.pdb

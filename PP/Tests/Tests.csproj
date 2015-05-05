@@ -52,6 +52,14 @@
       <Project>{1c7f783b-74e0-48fc-8ea9-91335e2f877d}</Project>
       <Name>PP.BL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\PP.Core.Data\PP.Core.Data.csproj">
+      <Project>{603d9c1b-f348-4ba2-8f55-4532cb7ab2da}</Project>
+      <Name>PP.Core.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PP.Core\PP.Core.csproj">
+      <Project>{c02f2e3c-9ad6-4ad5-b55f-fff22ba10dbb}</Project>
+      <Name>PP.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

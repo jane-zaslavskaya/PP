@@ -1,14 +1,12 @@
 ﻿using System.Collections.Generic;
+using Newtonsoft.Json;
 using PP.Core.Data.Base;
 
 namespace PP.Core.DomainModel.UniversityStructure
 {
-    public class Spetiality : BaseEntity
+    public class Spetiality : BaseFullShortNameModel
     {
-        public string FullName { get; set; }
-
-        public string ShortName { get; set; }
-
+        [JsonProperty("groups")]
         public List<Group> Groups { get; set; }
     }
 }

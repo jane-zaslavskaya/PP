@@ -12,7 +12,7 @@ namespace Tests
         static void Main(string[] args)
         {
             var cist = new CistBl();
-            var json = cist.GetTimetableForGroup("4307140");
+            var json = cist.GetTimetableForGroup("4307140", DateTime.Now, DateTime.Now.AddDays(7));
 
             Console.WriteLine(json);
         }

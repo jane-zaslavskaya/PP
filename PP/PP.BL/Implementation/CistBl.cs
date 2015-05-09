@@ -44,25 +44,39 @@ namespace PP.BL.Implementation
             return groups;
         }
 
-        public string GetTimetableForGroup(string groupName)
+        public Timetable GetTimetableForGroup(string groupName)
         {
             var client = new WebClient();
             var content = client.DownloadString(BaseseApiAddress + GetTimetable + "?timetable_id=" + groupName);
             var university = JsonConvert.DeserializeObject<Timetable>(content);
-
-
-            //Timetable
-            throw new NotImplementedException();
+            return university;
         }
 
-        public string GetTimetableForGroup(string groupName, DateTime startFrom)
+        public Timetable GetTimetableForGroup(string groupName, DateTime startFrom)
         {
-            throw new NotImplementedException();
+            var startDate = GetTimeStampFromDate(startFrom);
+            var client = new WebClient();
+            var content =
+                client.DownloadString(BaseseApiAddress + GetTimetable + "?timetable_id=" + groupName + "&time_from=" +
+                                      startDate);
+            return JsonConvert.DeserializeObject<Timetable>(content);
         }
 
-        public string GetTimetableForGroup(string groupName, DateTime @from, DateTime to)
+        public Timetable GetTimetableForGroup(string groupName, DateTime @from, DateTime to)
         {
-            throw new NotImplementedException();
+            var startDate = GetTimeStampFromDate(@from);
+            var toDate = GetTimeStampFromDate(to);
+            var client = new WebClient();
+            var content =
+                client.DownloadString(BaseseApiAddress + GetTimetable + "?timetable_id=" + groupName + "&time_from=" +
+                                      startDate + "&time_to=" + toDate);
+            return JsonConvert.DeserializeObject<Timetable>(content);
+        }
+
+        private long GetTimeStampFromDate(DateTime date)
+        {
+            var unixStart = DateTime.SpecifyKind(new DateTime(1970, 1, 1), DateTimeKind.Utc);
+            return (long)Math.Floor((date.ToUniversalTime() - unixStart).TotalSeconds);
         }
     }
 }

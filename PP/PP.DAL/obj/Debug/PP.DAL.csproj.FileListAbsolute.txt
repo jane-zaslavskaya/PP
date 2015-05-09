@@ -16,3 +16,5 @@ C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.DAL\bin\Debug\EntityFramewor
 C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.DAL\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.DAL\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.DAL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.DAL\bin\Debug\Newtonsoft.Json.xml

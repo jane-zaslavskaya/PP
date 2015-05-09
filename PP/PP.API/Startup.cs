@@ -20,7 +20,6 @@ namespace PP.API
     {
         public void Configuration(IAppBuilder app)
         {
-            // Если всю эту херню поменять местами,то CORS не пашет. хз почему.
             app.UseCors(Microsoft.Owin.Cors.CorsOptions.AllowAll);
             var config = new HttpConfiguration();
             InstallUnity(config);

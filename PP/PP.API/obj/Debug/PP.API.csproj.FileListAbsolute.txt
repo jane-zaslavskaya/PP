@@ -69,3 +69,4 @@ C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.API\bin\AutoMapper.xml
 C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.API\bin\AutoMapper.Net4.pdb
 C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.API\bin\PP.Core.Data.dll
 C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.API\bin\PP.Core.Data.pdb
+C:\Users\Jane\Documents\GitHub\PP\PP\PP.API\obj\Debug\PP.API.csprojResolveAssemblyReference.cache

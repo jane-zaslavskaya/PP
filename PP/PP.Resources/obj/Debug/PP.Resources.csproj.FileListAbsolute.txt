@@ -3,3 +3,8 @@ C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.Resources\bin\Debug\PP.Resou
 C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.Resources\obj\Debug\PP.Resources.csprojResolveAssemblyReference.cache
 C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.Resources\obj\Debug\PP.Resources.dll
 C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.Resources\obj\Debug\PP.Resources.pdb
+C:\Users\Jane\Documents\GitHub\PP\PP\PP.Resources\bin\Debug\PP.Resources.dll
+C:\Users\Jane\Documents\GitHub\PP\PP\PP.Resources\bin\Debug\PP.Resources.pdb
+C:\Users\Jane\Documents\GitHub\PP\PP\PP.Resources\obj\Debug\PP.Resources.csprojResolveAssemblyReference.cache
+C:\Users\Jane\Documents\GitHub\PP\PP\PP.Resources\obj\Debug\PP.Resources.dll
+C:\Users\Jane\Documents\GitHub\PP\PP\PP.Resources\obj\Debug\PP.Resources.pdb

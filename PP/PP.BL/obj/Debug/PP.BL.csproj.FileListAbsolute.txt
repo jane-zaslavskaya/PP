@@ -31,3 +31,4 @@ C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.BL\bin\Debug\PP.Core.Data.dl
 C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.BL\bin\Debug\PP.Core.dll
 C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.BL\bin\Debug\PP.Core.Data.pdb
 C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.BL\bin\Debug\PP.Core.pdb
+C:\Users\Jane\Documents\GitHub\PP\PP\PP.BL\obj\Debug\PP.BL.csprojResolveAssemblyReference.cache

@@ -3,3 +3,8 @@ C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.API.Core\bin\Debug\PP.API.Co
 C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.API.Core\obj\Debug\PP.API.Core.csprojResolveAssemblyReference.cache
 C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.API.Core\obj\Debug\PP.API.Core.dll
 C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.API.Core\obj\Debug\PP.API.Core.pdb
+C:\Users\Jane\Documents\GitHub\PP\PP\PP.API.Core\bin\Debug\PP.API.Core.dll
+C:\Users\Jane\Documents\GitHub\PP\PP\PP.API.Core\bin\Debug\PP.API.Core.pdb
+C:\Users\Jane\Documents\GitHub\PP\PP\PP.API.Core\obj\Debug\PP.API.Core.csprojResolveAssemblyReference.cache
+C:\Users\Jane\Documents\GitHub\PP\PP\PP.API.Core\obj\Debug\PP.API.Core.dll
+C:\Users\Jane\Documents\GitHub\PP\PP\PP.API.Core\obj\Debug\PP.API.Core.pdb

@@ -6,3 +6,9 @@ C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.Core.Data\obj\Debug\PP.Core.
 C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.Core.Data\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Вячеслав\Documents\GitHub\PP\PP\PP.Core.Data\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Jane\Documents\GitHub\PP\PP\PP.Core.Data\obj\Debug\PP.Core.Data.csprojResolveAssemblyReference.cache
+C:\Users\Jane\Documents\GitHub\PP\PP\PP.Core.Data\bin\Debug\PP.Core.Data.dll
+C:\Users\Jane\Documents\GitHub\PP\PP\PP.Core.Data\bin\Debug\PP.Core.Data.pdb
+C:\Users\Jane\Documents\GitHub\PP\PP\PP.Core.Data\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Jane\Documents\GitHub\PP\PP\PP.Core.Data\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Jane\Documents\GitHub\PP\PP\PP.Core.Data\obj\Debug\PP.Core.Data.dll
+C:\Users\Jane\Documents\GitHub\PP\PP\PP.Core.Data\obj\Debug\PP.Core.Data.pdb

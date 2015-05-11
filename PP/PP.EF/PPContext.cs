@@ -7,7 +7,7 @@ namespace PP.EF
     public class PPContext : IdentityDbContext<IdentityUser>
     {
         public PPContext()
-            : base("PPContext")
+            : base(@"Data Source=(LocalDb)\v11.0;AttachDbFilename=C:\Users\Jane\Documents\GitHub\PP\PP\pp.mdf;Integrated Security=True;")
         {
         }
 
